@@ -63,5 +63,8 @@ package:
 platform:
 	bundle platform
 
+tasks:
+	bash resources/test.sh all
+
 .PHONY: exe spec
 .DEFAULT_GOAL := spec

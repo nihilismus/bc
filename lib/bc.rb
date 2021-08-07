@@ -11,13 +11,12 @@ module Bc
   # Bc API.
   class API < Grape::API
     version 'v1', using: :header, vendor: 'Bc'
-    format :json
 
     desc 'Root endpoint.'
     # GET /healthcheck
     get :healthcheck do
       content_type 'text/plain'
-      'ok'
+      body :ok
     end
   end
 end
