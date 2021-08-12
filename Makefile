@@ -64,7 +64,7 @@ platform:
 	bundle platform
 
 tasks:
-	bash resources/test.sh all
+	cd resources && bash test.sh all
 
 .PHONY: exe spec
 .DEFAULT_GOAL := spec
